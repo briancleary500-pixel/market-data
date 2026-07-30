@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>This Week's Highest-Priced New Listing in Every Town</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1a1a1a;
+    background: #ffffff;
+    line-height: 1.5;
+    padding: 24px 16px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #1a1a1a;
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+  .header .week {
+    font-size: 14px;
+    color: #666;
+  }
+  .header .intro {
+    font-size: 15px;
+    color: #444;
+    margin-top: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .town-section {
+    margin-bottom: 28px;
+  }
+  .town-name {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+    padding: 6px 8px;
+    border-bottom: 1px solid #eee;
+  }
+  td {
+    padding: 8px 8px;
+    border-bottom: 1px solid #f2f2f2;
+    vertical-align: top;
+  }
+  tr:last-child td {
+    border-bottom: none;
+  }
+  a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+  }
+  a:hover {
+    border-bottom-color: #1a1a1a;
+  }
+  .price { white-space: nowrap; }
+  .dom { text-align: center; }
+  .ls { text-align: center; }
+  .sqft { text-align: right; }
+  .type { color: #888; font-size: 13px; }
+  .count {
+    font-size: 13px;
+    color: #888;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    body { padding: 16px 12px; }
+    .header h1 { font-size: 20px; }
+    table { font-size: 13px; }
+    td, th { padding: 6px 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>This Week's Highest-Priced New Listing in Every Town</h1>
+  <div class="week">Week ending July 29, 2026</div>
+</div>
+<div class="town-section">
+  <div class="town-name">Greenwich</div>
+  <table>
+    <tr>
+      <th>Address</th>
+      <th>Price</th>
+      <th>PropType</th>
+      <th class="sqft">Sq Ft</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.bhsusa.com/125584" target="_blank">170 Old Mill Road</a></td>
+      <td class="price">$8,495,000</td>
+      <td class="type">House</td>
+      <td class="sqft">—</td>
+    </tr>
+  </table>
+</div>
+<div class="town-section">
+  <div class="town-name">Stamford</div>
+  <table>
+    <tr>
+      <th>Address</th>
+      <th>Price</th>
+      <th>PropType</th>
+      <th class="sqft">Sq Ft</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.bhsusa.com/24194647" target="_blank">129 Emery Dr E.</a></td>
+      <td class="price">$1,895,000</td>
+      <td class="type">House</td>
+      <td class="sqft">—</td>
+    </tr>
+  </table>
+</div>
+<div class="town-section">
+  <div class="town-name">Darien</div>
+  <table>
+    <tr>
+      <th>Address</th>
+      <th>Price</th>
+      <th>PropType</th>
+      <th class="sqft">Sq Ft</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.bhsusa.com/24194430" target="_blank">13 Sunswyck Rd</a></td>
+      <td class="price">$4,850,000</td>
+      <td class="type">House</td>
+      <td class="sqft">—</td>
+    </tr>
+  </table>
+</div>
+<div class="town-section">
+  <div class="town-name">New Canaan</div>
+  <table>
+    <tr>
+      <th>Address</th>
+      <th>Price</th>
+      <th>PropType</th>
+      <th class="sqft">Sq Ft</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.bhsusa.com/24193553" target="_blank">215 Cross Ridge Rd</a></td>
+      <td class="price">$3,050,000</td>
+      <td class="type">House</td>
+      <td class="sqft">—</td>
+    </tr>
+  </table>
+</div>
+<div class="town-section">
+  <div class="town-name">Norwalk</div>
+  <table>
+    <tr>
+      <th>Address</th>
+      <th>Price</th>
+      <th>PropType</th>
+      <th class="sqft">Sq Ft</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.bhsusa.com/24192999" target="_blank">14 Rocky Point Rd</a></td>
+      <td class="price">$3,995,000</td>
+      <td class="type">House</td>
+      <td class="sqft">—</td>
+    </tr>
+  </table>
+</div>
+<div class="town-section">
+  <div class="town-name">Wilton</div>
+  <table>
+    <tr>
+      <th>Address</th>
+      <th>Price</th>
+      <th>PropType</th>
+      <th class="sqft">Sq Ft</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.bhsusa.com/24193184" target="_blank">89 Chestnut Hill Rd</a></td>
+      <td class="price">$2,695,000</td>
+      <td class="type">House</td>
+      <td class="sqft">—</td>
+    </tr>
+  </table>
+</div>
+<div class="town-section">
+  <div class="town-name">Westport</div>
+  <table>
+    <tr>
+      <th>Address</th>
+      <th>Price</th>
+      <th>PropType</th>
+      <th class="sqft">Sq Ft</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.bhsusa.com/24194541" target="_blank">4A Compo Pkwy</a></td>
+      <td class="price">$7,990,000</td>
+      <td class="type">House</td>
+      <td class="sqft">—</td>
+    </tr>
+  </table>
+</div>
+<div class="town-section">
+  <div class="town-name">Weston</div>
+  <table>
+    <tr>
+      <th>Address</th>
+      <th>Price</th>
+      <th>PropType</th>
+      <th class="sqft">Sq Ft</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.bhsusa.com/24187328" target="_blank">15 Cannondale Rd</a></td>
+      <td class="price">$2,299,000</td>
+      <td class="type">House</td>
+      <td class="sqft">—</td>
+    </tr>
+  </table>
+</div>
+<div class="town-section">
+  <div class="town-name">Fairfield</div>
+  <table>
+    <tr>
+      <th>Address</th>
+      <th>Price</th>
+      <th>PropType</th>
+      <th class="sqft">Sq Ft</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.bhsusa.com/24194198" target="_blank">2268 Fairfield Beach Rd</a></td>
+      <td class="price">$5,499,000</td>
+      <td class="type">House</td>
+      <td class="sqft">—</td>
+    </tr>
+  </table>
+</div>
+<div class="town-section">
+  <div class="town-name">Easton</div>
+  <table>
+    <tr>
+      <th>Address</th>
+      <th>Price</th>
+      <th>PropType</th>
+      <th class="sqft">Sq Ft</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.bhsusa.com/24193414" target="_blank">16 Robin Hood Ln</a></td>
+      <td class="price">$2,178,000</td>
+      <td class="type">House</td>
+      <td class="sqft">—</td>
+    </tr>
+  </table>
+</div>
+<div class="count">10 properties</div>
+<div class="footer">Lower Fairfield County, CT — Data from SmartMLS</div>
+</body>
+</html>
